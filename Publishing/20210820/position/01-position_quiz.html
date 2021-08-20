@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+    * {margin: 0; padding: 0;}
+    body {font: 12px "굴림", Gulim;}
+    #box {width: 550px; height: 500px; border: 1px solid black;}
+    #header {height: 150px; width: 550px; 
+                border: 1px solid blue;}
+    #body {height: 350px; width: 550px;
+            position: relative;}
+    #footer {height: 100px; width: 550px; 
+                border: 1px solid red;}
+
+    .side {height: 350px; width: 150px;
+            border: 1px solid purple;
+            position: absolute;}
+    .content {height: 350px; width: 400px;
+            border: 1px solid skyblue;
+            left: 150px;
+            position: absolute;}
+</style>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+    <div id="box">
+        <div id="header">
+            헤더
+        </div>
+        <div id="body">
+            <div class="side">
+                사이드바
+            </div>
+            <div class="content">
+                컨텐츠
+            </div>
+        </div>
+        <div id="footer">
+            푸터
+        </div>
+    </div>
+</body>
+</html>
