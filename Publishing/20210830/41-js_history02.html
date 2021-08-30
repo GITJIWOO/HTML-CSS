@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+</style>
+<script>
+/*
+
+*/
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+    <!-- 꼭 버튼과 링크가 아니어도 온클릭만으로도 다른 페이지로 이동할 수 있다. -->
+    <h1 onclick="location.href='https://www.naver.com';">두 번째 페이지</h1>
+    <p><a href="42-js_history03.html">마지막 페이지 이동</a></p>
+    <input type="button" value="이전페이지" onclick="history.back();" />
+    <input type="button" value="다음페이지" onclick="history.go(1);" />
+    <input type="button" value="다음(포워드)" onclick="history.forward();" />
+</body>
+</html>
