@@ -47,8 +47,15 @@ body {
     모달 열기
   </button>
 
+  <!-- 모달 여는 버튼 2번째를 만들어주세요. -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+    모달 열기
+  </button>
   <hr>
 	<a href="#myModal" data-toggle="modal">
+	  여기를 클릭하시면 모달 윈도우가 실행됩니다.
+	</a>
+	<a href="#myModal2" data-toggle="modal">
 	  여기를 클릭하시면 모달 윈도우가 실행됩니다.
 	</a>
 
@@ -77,6 +84,37 @@ body {
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- 모달쪽에 폼을 씌워서
+            회원가입 창으로 바꿔주세요.-->
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">회원가입</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <input type="text" name="name" class="form-control" placeholder="이름"/><br>
+          <input type="text" name="id" class="form-control" placeholder="아이디"/><br>
+          <input type="password" name="pw" class="form-control" placeholder="비밀번호"/><br>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">닫기</button>
+          <input type="submit" value="가입하기" class="btn btn-primary">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 
 </div>
 </body>
